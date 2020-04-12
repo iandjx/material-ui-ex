@@ -1,5 +1,4 @@
 import { createMuiTheme } from "@material-ui/core/styles";
-import { blue } from "@material-ui/core/colors";
 
 export const theme = createMuiTheme({
   palette: {
@@ -8,6 +7,11 @@ export const theme = createMuiTheme({
     },
     secondary: {
       main: "#FFBA60"
+    }
+  },
+  typography: {
+    h3: {
+      fontWeight: 300
     }
   }
 });

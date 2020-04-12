@@ -1,5 +1,10 @@
 import React from "react";
-import { AppBar, Toolbar, useScrollTrigger } from "@material-ui/core";
+import {
+  AppBar,
+  Toolbar,
+  useScrollTrigger,
+  Typography
+} from "@material-ui/core";
 
 function ElevationScroll(props: { children: any }) {
   const { children } = props;
@@ -18,7 +23,9 @@ export default function Header() {
   return (
     <ElevationScroll>
       <AppBar>
-        <Toolbar>Arc Development</Toolbar>
+        <Toolbar>
+          <Typography variant="h3">Arc Development</Typography>
+        </Toolbar>
       </AppBar>
     </ElevationScroll>
   );
